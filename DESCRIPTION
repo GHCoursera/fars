@@ -1,4 +1,4 @@
-Package: fars
+libraryPackage: fars
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
@@ -13,3 +13,4 @@ Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1
+Imports: dplyr, maps, readr, tidyr
