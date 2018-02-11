@@ -26,9 +26,9 @@ This vignette is written for the package `fars` as part of week 4 assignment of 
 The functions provided for you in this assignment will be using data from the US National Highway Traffic Safety Administration's (Fatality Analysis Reporting System https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars), which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. Once the package is installed 3 example files are accessible as follows:  
 
 ```{r access_extdata, eval=FALSE}
-system.file("extdata/accident_2013.csv.bz2", package = "fars")
-system.file("extdata/accident_2014.csv.bz2", package = "fars")
-system.file("extdata/accident_2015.csv.bz2", package = "fars")
+system.file("extdata", "accident_2013.csv.bz2", package = "fars")
+system.file("extdata", "accident_2014.csv.bz2", package = "fars")
+system.file("extdata", "accident_2015.csv.bz2", package = "fars")
 ```
 
 Functions in the package:  
