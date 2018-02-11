@@ -1,9 +1,8 @@
 Package: fars
-Type: Package
-Title: fars: A package to manipulate data of Administration’s Fatality Analysis Reporting System
+Title: A package to manipulate data of Administration’s Fatality Analysis Reporting System
 Version: 0.1.0
 Author: MN
-Maintainer: MN 
+Maintainer: MN <noltingm@t-online.de>
 Description: The package provides with 5 functions for analysis of the data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System.
 License:GNU 
 Encoding: UTF-8
