@@ -24,6 +24,7 @@ injuries suffered in motor vehicle traffic crashes.
 ```{r}
 library(fars)
 library(maps)
+library(dplyr)
 ```
 
 
