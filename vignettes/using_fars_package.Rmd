@@ -41,38 +41,34 @@ list.files(system.file("inst","extdata", package = "fars"))
 
 ### Function `make_filename`
 
-This function returns file name and path to the data files:
+This function returns the file name by year: 
 
 ```{r}
-yr <- 2015
-make_filename(yr)
+make_filename(2013)
 ```
 
 ### Function `fars_read_years`
 
 This functiuon will read in multiple Fatality Analysis Reporting System data files based on the years provided.
 
-```{r}
-fars_read_years(2013)
-```
+fars_read_years(2013:2014)
+
 
 
 ### Function `fars_summarize_years`
 
 This function summarizes yearly accidents data, by month.
 
-```{r}
-plot(fars_summarize_years(2015))
-fars_summarize_years(c(2015, 2014))
-```
+
+plot(fars_summarize_years(2013))
+fars_summarize_years(2013)
+
 
 ### Function `fars_map_state`
 
 The function displays a state map plot including accidents location
 by year
 
-```{r}
-state_num <- 49 # Utah
-yr <- 2014
-fars_map_state(state_num, yr)
-```
+
+fars_map_state(49, 2013)
+
