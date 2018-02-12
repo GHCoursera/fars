@@ -18,4 +18,5 @@ Imports:
     dplyr, 
     maps, 
     tidyr, 
-    graphics
+    graphics,
+    mapdata
