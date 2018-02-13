@@ -13,12 +13,12 @@ fars_summarize_years(years)
 \code{fars_summarize_years} will return a wide-formatted data frame.
 }
 \description{
-\code{fars_summarize_years} reads in multiple Fatality Analysis Reporting 
+\code{fars_summarize_years} reads in multiple Fatality Analysis Reporting
   System data files based on the years provided and summarise the number of
   observations by month and year.
 }
 \examples{
-fars_summarize_years(2015:2016)
+fars_summarize_years(2013:2014)
 
 }
 \seealso{

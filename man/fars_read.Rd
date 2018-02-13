@@ -10,8 +10,8 @@ fars_read(filename)
 \item{filename}{Csv file containing data}
 }
 \value{
-This function will search within the specified path for the 
-  filename provided. If the file exists, it will be imported and returned as 
+This function will search within the specified path for the
+  filename provided. If the file exists, it will be imported and returned as
   a data frame tbl.  If it does not exist an error message will be returned.
 }
 \description{

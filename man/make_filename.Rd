@@ -15,7 +15,7 @@ make_filename(year)
   will be "accident_2017.csv.bz2".
 }
 \description{
-\code{make_file} creates a name for the accident csv file based on the 
+\code{make_file} creates a name for the accident csv file based on the
   year provided.
 }
 \examples{

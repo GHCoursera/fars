@@ -52,7 +52,7 @@ make_filename <- function(year) {
 #' @param years The years relating to the file names to be read in
 #'
 #' @return \code{fars_read_years} will search for the file names based on the
-#'   years provided. For example, if 2016:2017 is provided \code{fars_read_years}
+#'   years provided. For example, if 2013:2014 is provided \code{fars_read_years}
 #'   will search for the following files:
 #'   \itemize{
 #'     \item "accident_2013.csv.bz2"
