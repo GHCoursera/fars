@@ -9,7 +9,7 @@ fars_map_state(state.num, year)
 \arguments{
 \item{state.num}{State number}
 
-\item{years}{The year of concern}
+\item{year}{A year, numeric value in the form yyyy of the accidents}
 }
 \value{
 \code{fars_map_state} will return a map plot of accidents for the given
@@ -21,11 +21,12 @@ fars_map_state(state.num, year)
 \code{fars_map_state} will plot the accidents on a map for a given state
   and year.
 }
-\examples{
-fars_map_state(2, 2013)
-
-}
 \seealso{
 \code{\link{make_filename}} to understand how the file name is created
 \code{\link{fars_read}} to understand how the file is read in
+
+ @examples
+\dontrun{
+fars_map_state(40, 2014)
+}
 }

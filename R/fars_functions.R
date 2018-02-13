@@ -11,7 +11,12 @@
 #'   a data frame tbl.  If it does not exist an error message will be returned.
 #'
 #' @examples
-#' fars_read("data/accident_2103.csv")
+#' \dontrun{
+#' data <- fars_read(filename = "./accident_2013.csv.bz2")
+#'
+#' file<-make_filename(year=2013)
+#' data<-fars_read(filename = file)
+#' }
 #'
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df
@@ -33,11 +38,11 @@ fars_read <- function(filename) {
 #' @param year the year to add to the file name
 #'
 #' @return \code{make_file} will return a file name based on the year provided.
-#'   For example, if 2017 is provided as the year the name that will be returned
-#'   will be "accident_2017.csv.bz2".
+#'   For example, if 2013 is provided as the year the name that will be returned
+#'   will be "accident_2013.csv.bz2".
 #'
 #' @examples
-#' make_filename(2017)
+#' make_filename(2013)
 #'
 #' @export
 make_filename <- function(year) {
@@ -88,18 +93,24 @@ fars_read_years <- function(years) {
 #'   System data files based on the years provided and summarise the number of
 #'   observations by month and year.
 #'
+#'
 #' @param years The years relating to the file names to be read in
 #'
 #' @return \code{fars_summarize_years} will return a wide-formatted data frame.
+#'   One row for each month, the month number in the first column (MONTH)
 #'
 #' @seealso \code{\link{fars_read_years}} to understand how the file name is created
 #'
 #' @examples
+#' \dontrun{
 #' fars_summarize_years(2013:2014)
+#' }
+#'
 #'
 #' @importFrom dplyr bind_rows
 #' @importFrom dplyr group_by
 #' @importFrom dplyr summarize
+#' @importFrom dplyr %>%
 #' @importFrom tidyr spread
 #'
 #' @export
@@ -116,7 +127,7 @@ fars_summarize_years <- function(years) {
 #'   and year.
 #'
 #' @param state.num State number
-#' @param years The year of concern
+#' @param year A year, numeric value in the form yyyy of the accidents
 #'
 #' @return \code{fars_map_state} will return a map plot of accidents for the given
 #'   state and year. If no accidents occurred in that state for that year a
@@ -127,8 +138,11 @@ fars_summarize_years <- function(years) {
 #' \code{\link{make_filename}} to understand how the file name is created
 #' \code{\link{fars_read}} to understand how the file is read in
 #'
-#' @examples
-#' fars_map_state(2, 2013)
+#'  @examples
+#' \dontrun{
+#' fars_map_state(40, 2014)
+#' }
+#'
 #'
 #' @importFrom dplyr filter
 #' @importFrom maps map

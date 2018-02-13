@@ -21,6 +21,11 @@ This is a function that reads in csv data .
 \code{fars_read} reads in csv  data.
 }
 \examples{
-fars_read("data/accident_2103.csv")
+\dontrun{
+data <- fars_read(filename = "./accident_2013.csv.bz2")
+
+file<-make_filename(year=2013)
+data<-fars_read(filename = file)
+}
 
 }

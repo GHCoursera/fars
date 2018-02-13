@@ -11,6 +11,7 @@ fars_summarize_years(years)
 }
 \value{
 \code{fars_summarize_years} will return a wide-formatted data frame.
+  One row for each month, the month number in the first column (MONTH)
 }
 \description{
 \code{fars_summarize_years} reads in multiple Fatality Analysis Reporting
@@ -18,7 +19,10 @@ fars_summarize_years(years)
   observations by month and year.
 }
 \examples{
+\dontrun{
 fars_summarize_years(2013:2014)
+}
+
 
 }
 \seealso{
