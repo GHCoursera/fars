@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/GHCoursera/fars.svg?branch=master)](https://travis-ci.org/GHCoursera/fars)
+
 # Creating FARS package
 
 ## Final Assignment of the Coursera Course "Building R packages"
